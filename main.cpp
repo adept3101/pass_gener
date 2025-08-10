@@ -16,7 +16,7 @@ void pass_gen(int size) {
   char *pass = new char[size + 1];
   std::ofstream out("pass.txt", std::ios::app);
   for (int i = 0; i < size; i++) {
-    pass[i] = arr[rand() % 62];
+    pass[i] = arr[rand() % 60];
     std::cout << pass[i];
   }
   pass[size] = '\0';
